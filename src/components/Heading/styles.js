@@ -5,7 +5,7 @@ export const Container = styled.div`
   max-width: 120rem;
   max-height: 6rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 `;
 
@@ -25,7 +25,7 @@ export const NavBar = styled.nav`
 export const Links = styled.ul`
     width: 100% ;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
  
 `;
