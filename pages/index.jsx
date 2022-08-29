@@ -9,19 +9,7 @@ import { useEffect, useState } from 'react'
 
 
 export default function Home() {
-  const [projects, setProjects] = useState([])
-
-  useEffect(() => {
-    fetch(projectsApi)
-      .then(response => response.json())
-      .then(data => {
-        setProjects({
-          name: data.name,
-        })
-      })
-      .catch(error => console.log(error.message))
-  }, [])
-
+  
   // console.log(projects.data.name)
 
   
@@ -30,12 +18,7 @@ export default function Home() {
     <Heading text='Portfolio'/>
     <About/>
     <TechStack/>
-    <div>
-      oi
-      {projects && projects.map((post) => (
-              <li>{post.data.name}</li>
-            ))}
-    </div>
+    <Projects/>
     </>
   )
 }

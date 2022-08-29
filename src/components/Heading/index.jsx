@@ -1,5 +1,8 @@
 import P from 'prop-types';
 import * as Styled from './styles';
+import imgGitHub from '../../assets/images/github.svg'
+import imgLinkedin from '../../assets/images/linkedin.svg'
+import Image from 'next/image';
 
 export const Heading = ({text}) => {
   return (
@@ -12,8 +15,12 @@ export const Heading = ({text}) => {
           <Styled.Link>Tech Stack</Styled.Link>
           <Styled.Link>Projetos</Styled.Link>
           <Styled.Link>Contato</Styled.Link>
-          <Styled.Link>Github</Styled.Link>
-          <Styled.Link>LinkedIn</Styled.Link>
+          <Styled.Link >
+            <Image src={imgGitHub} width={30} height={30}/>
+          </Styled.Link>
+          <Styled.Link>
+            <Image src={imgLinkedin}  width={30} height={30}  />
+          </Styled.Link>
         </Styled.Links>
       </Styled.NavBar>
     </Styled.Container>
