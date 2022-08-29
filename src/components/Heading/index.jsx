@@ -23,27 +23,29 @@ export const Heading = ({text}) => {
     to: '/#contact'
   }];
   return (
-    <Styled.Container>
-      <Styled.Logo>{text}</Styled.Logo>
-      <Styled.NavBar>
-        <Styled.Links>
-          {rotas.map((rota, index) => (
-            <Styled.LinkLi key={index}>
-              <Link href={rota.to}>
-                {rota.label}
-              </Link>
+    <Styled.Header>
+      <Styled.Container>
+        <Styled.Logo>{text}</Styled.Logo>
+        <Styled.NavBar>
+          <Styled.Links>
+            {rotas.map((rota, index) => (
+              <Styled.LinkLi key={index}>
+                <Link href={rota.to}>
+                  {rota.label}
+                </Link>
+              </Styled.LinkLi>
+            ))}
+            <Styled.LinkLi >
+              <Link href='https://github.com/LeandroMenoci' passHref><a target="_blank" rel="noopener noreferrer"><Image src={imgGitHub} width={30} height={30}/></a></Link>
             </Styled.LinkLi>
-          ))}
-          <Styled.LinkLi >
-            <Link href='https://github.com/LeandroMenoci' passHref><a target="_blank" rel="noopener noreferrer"><Image src={imgGitHub} width={30} height={30}/></a></Link>
-          </Styled.LinkLi>
-          <Styled.LinkLi>
-            <Link href='https://www.linkedin.com/in/leandromenoci/' passHref><a target="_blank" rel="noopener noreferrer"><Image src={imgLinkedin}  width={30} height={30}  /></a></Link>
-            
-          </Styled.LinkLi>
-        </Styled.Links>
-      </Styled.NavBar>
-    </Styled.Container>
+            <Styled.LinkLi>
+              <Link href='https://www.linkedin.com/in/leandromenoci/' passHref><a target="_blank" rel="noopener noreferrer"><Image src={imgLinkedin}  width={30} height={30}  /></a></Link>
+              
+            </Styled.LinkLi>
+          </Styled.Links>
+        </Styled.NavBar>
+      </Styled.Container>
+    </Styled.Header>
   );
 };
 Heading.propTypes = {

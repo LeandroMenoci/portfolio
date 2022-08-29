@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+padding-top: 5rem;
   max-width: 120rem;
   display: flex;
   justify-content: space-between;

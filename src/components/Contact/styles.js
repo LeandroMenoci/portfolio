@@ -10,6 +10,7 @@ export const Container = styled.footer`
   height: 10rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  padding-top: 5rem;
 `;
 
 export const Title = styled.h2`
