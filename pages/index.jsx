@@ -5,36 +5,29 @@ import { TechStack } from '../src/components/TechStack'
 // import projectsApi from '../data/projectsApi.json'
 import projectsApi from './api/projectsApi.json'
 import { useEffect, useState } from 'react'
+import { Contact } from '../src/components/Contact'
 
 
 
 export default function Home() {
   
-  // console.log(projects.data.name)
 
-  
   return (
     <>
     <Heading text='Portfolio'/>
     <About/>
     <TechStack/>
     <Projects/>
+    <Contact/>
     </>
   )
 }
 
 
-// export async function getStaticProps() {
-//   const url = projectsApi
-//   const res = await fetch(url)
-//   const posts = await res.json()
-//   console.log(posts)
-
-//   // By returning { props: { posts } }, the Blog component
-//   // will receive `posts` as a prop at build time
-//   return {
-//     props: {
-//       posts,
-//     },
-//   }
-// }
+export async function getStaticProps() { 
+  return {
+    props: {
+      posts,
+    },
+  }
+}

@@ -40,9 +40,9 @@ export const Projects = () => {
               </Styled.BoxDescrip>
               <Styled.BoxLinks>
                 
-                <Link href={project.linkProject}><a><span><Image src={imgLink} width={20} height={20} /></span>Link Preview</a></Link>
+                <Link href={project.linkProject} passHref><a target="_blank" rel="noopener noreferrer"><span><Image src={imgLink} width={20} height={20} /></span>Link Preview</a></Link>
                 
-                <Link href={project.linkGit}><a><span><Image src={imgGitHub} width={20} height={20} /></span>View Code</a></Link>
+                <Link href={project.linkGit} passHref><a target="_blank" rel="noopener noreferrer"><span><Image src={imgGitHub} width={20} height={20} /></span>View Code</a></Link>
                 
               </Styled.BoxLinks>
             </Styled.Projects>

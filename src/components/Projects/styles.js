@@ -40,6 +40,7 @@ export const Projects = styled.div`
   box-shadow: 0 0 10px rgba(0,0,0,0.6);
   transition: transform 100ms ease-in-out;
   padding: 2.5rem;
+  border-radius: 0.5rem;
 
   &:hover {
     transform: scale(1.05);
@@ -86,6 +87,7 @@ export const Button = styled.button`
   padding: 15px 20px;
   color: white;
   margin-top: 2rem;
+  border-radius: .5rem;
 
   a {
     text-decoration: none;
