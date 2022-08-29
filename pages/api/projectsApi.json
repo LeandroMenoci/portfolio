@@ -1,10 +1,10 @@
 [
   {
     "id": "1",
-    "name": "React Context API",
-    "descr": "Projeto em react de Context API",
-    "techStack": "ReactJS",
-    "linkGit": "https://github.com/LeandroMenoci/ContextAPI",
+    "name": "Portfolio",
+    "descr": "Portfolio criado em NextJS para apresentar alguns de meus trabalhos",
+    "techStack": "NextJS",
+    "linkGit": "https://github.com/LeandroMenoci/portfolio",
     "linkProject": "https://reactcontextapi.vercel.app"
   },
   {

@@ -25,7 +25,7 @@ export const Projects = () => {
 
  
   return (
-    <Styled.Container>
+    <Styled.Container id='projects'>
       <Styled.BoxText>
         <h3>Projetos</h3>
         <p>Coisas que eu construí até agora</p>

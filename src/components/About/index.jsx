@@ -5,7 +5,7 @@ import perfil from '../../assets/images/perfil.jpg'
 
 export const About = () => {
   return (
-    <Styled.Container>
+    <Styled.Container id='about'>
       <Styled.ContainerText>
       <Styled.Text>Oi 👋, meu nome é <spam>Leandro</spam> e eu estudo para me tornar um grande dev Front-end</Styled.Text>
       </Styled.ContainerText>

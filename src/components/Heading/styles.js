@@ -30,7 +30,12 @@ export const Links = styled.ul`
  
 `;
 
-export const Link = styled.li`
+export const LinkLi = styled.li`
     list-style: none;
+
+    a {
+      text-decoration: none;
+      color: #D9D9D9;
+    }
 `;
 

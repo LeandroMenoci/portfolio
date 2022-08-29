@@ -16,7 +16,7 @@ import Image from 'next/image'
 
 export const TechStack = () => {
   return (
-    <Styled.Container>
+    <Styled.Container id='techstack'>
       <Styled.BoxText>
         <h3>Minha Tech Stack</h3>
         <p> Principais tecnologias que estudei e trabalhei recentemente</p>
