@@ -10,6 +10,7 @@ export const Header = styled.div`
   z-index: 100;
   background: rgb(51, 50, 50);
   box-shadow: 0 0 10px rgba(0,0,0,0.6);
+
 `;
 
 export const Container = styled.div`
@@ -21,6 +22,7 @@ export const Container = styled.div`
   align-items: center;
   margin: 0 auto;
   align-items: center;
+ 
 `;
 
 export const Logo = styled.h1`
@@ -41,7 +43,9 @@ export const Links = styled.ul`
     display: flex;
     justify-content: space-between;
     align-items: center;
- 
+    @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const LinkLi = styled.li`

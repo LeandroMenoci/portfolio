@@ -11,6 +11,10 @@ export const Container = styled.footer`
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding-top: 5rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Title = styled.h2`
@@ -22,6 +26,9 @@ export const Box = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Infos = styled.p`

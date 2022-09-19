@@ -5,7 +5,8 @@ import imgLinkedin from '../../assets/images/linkedin.svg'
 import Link from 'next/link'
 import Image from 'next/image';
 
-export const Heading = ({text}) => {
+export const Heading = ({ text }) => {
+
   const rotas = [{
     label: 'Inicio',
     to: '/'
@@ -36,11 +37,11 @@ export const Heading = ({text}) => {
               </Styled.LinkLi>
             ))}
             <Styled.LinkLi >
-              <Link href='https://github.com/LeandroMenoci' passHref><a target="_blank" rel="noopener noreferrer"><Image src={imgGitHub} width={30} height={30}/></a></Link>
+              <Link href='https://github.com/LeandroMenoci' passHref><a target="_blank" rel="noopener noreferrer"><Image src={imgGitHub} width={30} height={30} /></a></Link>
             </Styled.LinkLi>
             <Styled.LinkLi>
-              <Link href='https://www.linkedin.com/in/leandromenoci/' passHref><a target="_blank" rel="noopener noreferrer"><Image src={imgLinkedin}  width={30} height={30}  /></a></Link>
-              
+              <Link href='https://www.linkedin.com/in/leandromenoci/' passHref><a target="_blank" rel="noopener noreferrer"><Image src={imgLinkedin} width={30} height={30} /></a></Link>
+
             </Styled.LinkLi>
           </Styled.Links>
         </Styled.NavBar>
